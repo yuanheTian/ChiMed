@@ -2,6 +2,8 @@
 
 This is a repository to construct ChiMed corpus. 
 
+To use the crawler, please first make sure to download the proper explorer driver (Firefox recommended) and put it into the environment variable path (if using Linux) or put the driver file under the same directory as the program (if using Windows).
+
 To crawl the webset and construct the corpus. First download urls and data by running
 ```python
 python ./src/data_collection.py
