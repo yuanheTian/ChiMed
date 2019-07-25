@@ -196,7 +196,7 @@ def build_dataset(data_flag, build_same_dataset=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_flag', required=True, type=str, help='The type of dataset you want to build. '
+    parser.add_argument('--data_flag', required=True, type=str, default='all', help='The type of dataset you want to build. '
                                                                      'It should be one of \'all\', \'corpus\', \'relevancy\', '
                                                                      'and \'adoption\'.')
 
