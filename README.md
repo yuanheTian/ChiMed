@@ -6,7 +6,7 @@ To use the crawler, please first make sure to download the proper explorer drive
 
 To crawl the webset and construct the corpus. First download urls and data by running
 ```python
-cd src && python data_collection.py
+cd src &amp;&amp; python data_collection.py
 ```
 
 Next, to build ChiMed and datasets for relevancy prediction and adoptation prediction, run
