@@ -44,7 +44,6 @@ class template_39ask:
 		json_entry['question_time'] = browser.find_element_by_xpath(question_time_xpath).text
 		json_entry['labels'] = '\t'.join([var.text for var in browser.find_elements_by_xpath(labels_xpath)])
 		doctor_page_links = browser.find_elements_by_xpath(doctor_page_links_xpath)
-		doctor_names = browser.find_elements_by_xpath(doctor_names_xpath)
 		doctor_other_infos = browser.find_elements_by_xpath(doctor_other_infos_xpath)
 		doctor_specialties = browser.find_elements_by_xpath(doctor_specialties_xpath)
 		doctor_answers = browser.find_elements_by_xpath(doctor_answers_xpath)
@@ -55,11 +54,10 @@ class template_39ask:
 		doctor_specialties = [var.text for var in doctor_specialties]
 		doctor_specialties = doctor_specialties + [''] * (len(doctor_mids) - len(doctor_specialties))
 		json_entry['answers'] = [{'mid': doctor_mids[i].get_attribute('mid'), 
-								'selected': str(i < num_sele),
+								'adopted': str(i < num_sele),
 								'page_link': doctor_page_links[i].get_attribute('href'),
-								'name': doctor_names[i].text,
-								'other_info': doctor_other_infos[2 * i].text + '\t' + doctor_other_infos[2 * i + 1].text,
-								'specialty': doctor_specialties[i],
+								# 'other_info': doctor_other_infos[2 * i].text + '\t' + doctor_other_infos[2 * i + 1].text,
+								# 'specialty': doctor_specialties[i],
 								'answer': doctor_answers[i].text,
 								'answer_time': answer_times[i].text} for i in range(len(doctor_mids))]
 		follow_up_mids = browser.find_elements_by_xpath(follow_up_mids_xpath)

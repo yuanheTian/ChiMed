@@ -14,6 +14,20 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import random
 
+data_dir = '../data/'
+url_dir = '../urls/'
+output_dir = os.path.join(data_dir, 'original')
+
+if not os.path.exists(data_dir):
+	os.mkdir(data_dir)
+
+if not os.path.exists(url_dir):
+	os.mkdir(url_dir)
+
+if not os.path.exists(output_dir):
+	os.mkdir(output_dir)
+
+
 def _get_page(browser, url, element_present, timeout):
 	try:
 		browser.get(url)
@@ -26,6 +40,7 @@ def _get_page(browser, url, element_present, timeout):
 		browser.get(url)
 		WebDriverWait(browser, timeout).until(element_present)
 	return browser
+
 
 if __name__ == '__main__':
 	template = template_39ask()
@@ -46,7 +61,8 @@ if __name__ == '__main__':
 	departments = template.departments
 	num_urls_per_dept = 50000
 	sample_rate = 0.2
-	if not os.path.isfile('{}_urls_list'.format(template.template_name)):
+	url_path = os.path.join(url_dir, '{}_urls_list'.format(template.template_name))
+	if not os.path.isfile(url_path):
 		loaded_flag = template.url_loaded_flag
 		element_present = EC.presence_of_element_located((By.CLASS_NAME, loaded_flag))
 		browser = webdriver.Chrome(options=options)
@@ -76,14 +92,14 @@ if __name__ == '__main__':
 							url_out.write('\n'.join(urls))
 							urls = []
 		if len(urls) > 0:
-			with open('{}_urls_list'.format(template.template_name), 'a') as url_out:
+			with open(url_path, 'a') as url_out:
 				url_out.write('\n')
 				url_out.write('\n'.join(urls))
 				urls = []
 	loaded_flag = template.loaded_flag
 	element_present = EC.presence_of_element_located((By.CLASS_NAME, loaded_flag))
 	browser = webdriver.Chrome(options=options)
-	urls = open('{}_urls_list'.format(template.template_name)).read().split('\n')
+	urls = open(url_path).read().split('\n')
 	del(urls[0])
 	# urls = [random.sample(urls[num_urls_per_dept * i: (num_urls_per_dept + 1) * i], sample_rate * num_urls_per_dept) for i in range(len(departments))]
 	json_entries = []
@@ -96,6 +112,8 @@ if __name__ == '__main__':
 		if len(json_entries) > batch_size - 1:
 			json_str = {'data': json_entries}
 			out_path = '{}_1k_batch_{}.json'.format(template.template_name, batch_counter)
+			out_path = os.path.join(output_dir, out_path)
 			with codecs.open(out_path, 'w') as f:
 				json.dump(json_str, f, ensure_ascii=False)
+				f.write('\n')
 			batch_counter += 1
