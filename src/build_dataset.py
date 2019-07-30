@@ -11,21 +11,6 @@ DATA_DIR = '../data'
 URL_DIR = '../urls'
 
 
-def load_data(data_path):
-    full_data = []
-    with open(data_path, 'r', encoding='utf8') as f:
-        for line in f.readlines():
-            full_data.append(json.loads(line))
-    return full_data
-
-
-def save_data(data_path, data_list):
-    with open(data_path, 'w', encoding='utf8') as f:
-        for data in data_list:
-            json.dump(data, f, ensure_ascii=False)
-            f.write('\n')
-
-
 def build_corpus():
     id_dict = {}
     if not os.path.exists(DATA_DIR):
@@ -199,10 +184,12 @@ if __name__ == '__main__':
     parser.add_argument('--data_flag', required=True, type=str, default='all', help='The type of dataset you want to build. '
                                                                      'It should be one of \'all\', \'corpus\', \'relevancy\', '
                                                                      'and \'adoption\'.')
+    parser.add_argument('--same_dataset', defaut=False, type=_str2bool, help='Keep it false if you don\'t get the urls '
+                                                                             'from us')
 
     args = parser.parse_args()
     data_flag = args.data_flag
     print('data flag: %s' % data_flag)
 
-    build_dataset(data_flag)
+    build_dataset(data_flag, args.same_dataset)
 

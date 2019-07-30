@@ -1,5 +1,31 @@
 import numpy as np
 import random
+import json
+import argparse
+
+
+def load_data(data_path):
+    full_data = []
+    with open(data_path, 'r', encoding='utf8') as f:
+        for line in f.readlines():
+            full_data.append(json.loads(line))
+    return full_data
+
+
+def save_data(data_path, data_list):
+    with open(data_path, 'w', encoding='utf8') as f:
+        for data in data_list:
+            json.dump(data, f, ensure_ascii=False)
+            f.write('\n')
+
+
+def _str2bool(s):
+    if s.lower() in ['true', 'yes']:
+        return True
+    elif s.lower() in ['false', 'no']:
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Wrong bool type!')
 
 
 def select_two_answers(data_list):
