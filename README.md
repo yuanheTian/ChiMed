@@ -4,11 +4,11 @@ This is a repository to construct ChiMed corpus.
 
 ## Copyright Issue
 
-We are still negotiating with the 39ask company (who has the copyright of the data) about the data release. For now, we **CANNOT** release the data directly. Once the company agrees us to release the data, we will updata our repository and direct you to somewhere to download the data.
+We are still negotiating with the 39ask company (who has the copyright of the data) about the data release. For now, we **CANNOT** release the data directly. Once the company agrees us to release the data, we will update our repository and direct you to the right palce to download the data.
 
 Here, we release the code to crawl the data and to construct the corpus in the same way as we did. 
 
-Please note that the crawler may crawl urls that are different from those we used in our paper. If you want to build datasets exactly the same as ours, please waite for the negotiating result. Alternatively, you can send a request e-mail to ```yhtian@uw.edu```. We will send you the urls (not the data) we used to construct the corpus, if you agree that you will use the data for non-profit research porpose only and agree that you will **NOT** send the urls to others. 
+Please note that the crawler may crawl urls that are different from those we used in our paper. If you want to build datasets exactly the same as ours, please wait for the negotiating result. Alternatively, you can send a request e-mail to ```yhtian@uw.edu```. We will send you the urls (not the data) we used to construct the corpus, if you agree that you will use the data for non-profit research porpose only and agree that you will **NOT** send the urls to others. 
 
 ## Usage
 
