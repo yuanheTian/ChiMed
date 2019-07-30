@@ -14,9 +14,9 @@ Please note that the crawler may crawl urls that are different from those we use
 
 To use the crawler, please first make sure to download the proper explorer driver (Firefox recommended) and put it into the environment variable path (if using Linux) or put the driver file under the same directory as the program (if using Windows).
 
-To crawl the webset and construct the corpus. First go to ```src``` directory and download urls and data by running
+To crawl the webset and construct the corpus. First download urls and data by running
 ```python
-python data_collection.py
+python ./src/data_collection.py
 ```
 
 Next, to build ChiMed and datasets for relevancy prediction and adoptation prediction, run
