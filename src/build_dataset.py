@@ -5,7 +5,7 @@ import copy
 from tqdm import tqdm
 from os import path
 import random
-from utils import *
+from utils import load_data, save_data, _str2bool, select_two_answers, select_one_adopted_one_unadopted_answers, remove_by_length, switch_answers
 
 DATA_DIR = '../data'
 URL_DIR = '../urls'
@@ -21,7 +21,7 @@ def build_corpus():
     file_list.sort()
     all_qa_data = []
 
-    for file_name in tqdm(file_list):
+    for file_name in file_list:
         if file_name.endswith('.json'):
             file_path = os.path.join(original_data_dir, file_name)
             with open(file_path, 'r', encoding='utf8') as f:
@@ -70,7 +70,7 @@ def build_relevancy_dataset(build_same_dataset):
                             if answer['mid'] == mid:
                                 answer_info['answer'] = answer['answer']
 
-        save_data(path.join(relevancy_dir, flag + '.relevancy.json'), data_id_list)
+            save_data(path.join(relevancy_dir, flag + '.relevancy.json'), data_id_list)
     else:
         random.seed(101)
         adoption_dir = os.path.join(DATA_DIR, 'ChiMed-QA1')
@@ -184,7 +184,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_flag', required=True, type=str, default='all', help='The type of dataset you want to build. '
                                                                      'It should be one of \'all\', \'corpus\', \'relevancy\', '
                                                                      'and \'adoption\'.')
-    parser.add_argument('--same_dataset', defaut=False, type=_str2bool, help='Keep it false if you don\'t get the urls '
+    parser.add_argument('--same_dataset', default=False, type=_str2bool, help='Keep it false if you don\'t get the urls '
                                                                              'from us')
 
     args = parser.parse_args()
