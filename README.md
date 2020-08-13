@@ -2,7 +2,7 @@
 
 This is the ChiMed dataset for [ChiMed: A Chinese Medical Corpus for Question Answering](https://www.aclweb.org/anthology/W19-5027/) at BioNLP-2019.
 
-## Copyright
+## The Copyright
 
 The copyright of the data belongs to [39ask](http://www.39.net/). We release the ChiMed dataset based on our contract.
 
@@ -16,7 +16,7 @@ Please read the following instructions before submit your request form:
 * To submit a request with signiture, one way is to print the request form, sign, and scan it.
 
 
-## Statistics
+## The Statistics
 
 **Note**: according to our contract with 39ask, the ChiMed data is much larger than the one we used in the paper. We recommend you to use the new data.
 
