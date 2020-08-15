@@ -25,7 +25,7 @@ Please read the following instructions before submit your request form:
 | \# of QA pages | 200,744 |
 | \# of departments | 15 |
 | \# of questions | 200,744 |
-| \# of answer | 401,488 |
-| \# of unique keyphrases | 11724 |
+| \# of answers | 401,488 |
+| \# of unique keyphrases | 11,724 |
 | avg # of keyphrases | 4.51 |
 
