@@ -36,5 +36,5 @@ The statistics of the current version is included in the dataset.
 ### "Recommended" flag vs. "Adopted" flag
 
 For each answer in the dataset, there are two flags: `Recommended` and `Adopted`. Their differences are:
-* `Recommended`: whether the answer is recommended by the webset (choose by the webset system);
-* `Adopted`: whether the patient adopt the answer (choose by the user).
+* `Recommended`: whether the answer is recommended by the webset (chosen by the webset system);
+* `Adopted`: whether the patient adopt the answer (choosen by the user).
