@@ -18,7 +18,7 @@ Please read the following instructions before submit your request form:
 
 ## The Statistics
 
-**Note**: according to our contract with 39ask, the ChiMed data is much larger than the one we used in the paper. We recommend you to use the new data.
+**Note**: according to our contract with 39ask, the ChiMed data **is much larger than the one we used in the paper**. We recommend you to use the new data.
 
 | | Number |
 |-|-:|
