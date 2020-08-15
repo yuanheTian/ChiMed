@@ -16,9 +16,13 @@ Please read the following instructions before submit your request form:
 * To submit a request with signiture, one way is to print the request form, sign, and scan it.
 
 
-## The Statistics
+## Important Things to Note before Using the Data
 
-**Note**: according to our contract with 39ask, the ChiMed data **is much larger than the one we used in the paper**. We recommend you to use the new data.
+### The Statistics
+
+According to our contract with 39ask, the ChiMed data **is much larger than the one we used in the paper** and there is **NO** overlap between the current version and the one used in our paper. We recommend you to use the new data.
+
+The statistics of the current version is included in the dataset.
 
 | | Number |
 |-|-:|
@@ -29,3 +33,8 @@ Please read the following instructions before submit your request form:
 | \# of unique keyphrases | 11,724 |
 | avg # of keyphrases | 4.51 |
 
+### "Recommended" flag vs. "Adopted" flag
+
+For each answer in the dataset, there are two flags: `Recommended` and `Adopted`. Their differences are:
+* `Recommended`: whether the answer is recommended by the webset (choose by the webset system);
+* `Adopted`: whether the patient adopt the answer (choose by the user).
