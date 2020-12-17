@@ -4,7 +4,7 @@ This github repository includes the information about the ChiMed Corpus.
 
 ## The Copyright
 
-The copyright of the corpus belongs to [39ask](http://www.39.net/). We release the ChiMed corpus based on our contract.
+The copyright of the corpus belongs to [39ask](http://www.39.net/). We release the ChiMed corpus based on our contract with 39ask.
 
 ## Request the ChiMed Dataset
 
