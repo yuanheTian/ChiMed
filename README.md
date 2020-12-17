@@ -40,7 +40,7 @@ For each answer in the corpus, there are two flags: `Recommended` and `Adopted`.
 
 ## Citation
 
-Please cite our paper: [ChiMed: A Chinese Medical Corpus for Question Answering](https://www.aclweb.org/anthology/W19-5027/) at BioNLP-2019 if you use ChiMed Corpus (p.s. The ChiMed Corpus is larger than the dataset used in this paper).
+If you use the ChiMed corpus, please cite [the following paper](https://www.aclweb.org/anthology/W19-5027/) (Note: the ChiMed Corpus is larger than the dataset used in this paper).
 
 ```
 @inproceedings{tian-etal-2019-chimed,
