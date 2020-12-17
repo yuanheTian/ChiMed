@@ -13,7 +13,6 @@ To request the ChiMed Corpus, please download the contract in this repository ([
 Please read the following instructions before submitting your request form:
 * If your affiliation is in China, please use the [Chinese version](./ChiMed_数据集使用协议（中文）.pdf) of the contract and fill it in Chinese (including the signature).  
 * Because the corpus is restricted to **non-commercial** use, we only accepted e-mail addresses that end with `.edu`.
-* To submit a request with a signature, one way is to print the request form, sign, and scan it.
 
 
 ## Important Things to Note before Using the Data
