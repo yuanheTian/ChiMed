@@ -8,12 +8,12 @@ The copyright of the data belongs to [39ask](http://www.39.net/). We release the
 
 ## Request the ChiMed Dataset
 
-To request the ChiMed Dataset, please download the contract in this repository ([English](./User_Contract_(English).pdf), [Chinese](./ChiMed_数据集使用协议（中文）.pdf)), fill the request form, sign it, and send the request file to `yhtian@uw.edu`. We will e-mail the data to the e-mail address provided in the request form within three business days if the request form meets our requirement.
+To request the ChiMed Dataset, please download the contract in this repository ([English](./User_Contract_(English).pdf), [Chinese](./ChiMed_数据集使用协议（中文）.pdf)), fill the request form, sign it, and send the request file to `yhtian@uw.edu`. We will e-mail the data to the e-mail address provided in the request form within three business days if the request form meets our requirements.
 
-Please read the following instructions before submit your request form:
-* If your affiliation is in China, please use the [Chinese version](./ChiMed_数据集使用协议（中文）.pdf) of the contract and fill it in Chinese (including the signiture).  
-* Because the Dataset is restrict to **non-commercial** use, we only accepted e-mail addresses that end with `.edu`.
-* To submit a request with signiture, one way is to print the request form, sign, and scan it.
+Please read the following instructions before submitting your request form:
+* If your affiliation is in China, please use the [Chinese version](./ChiMed_数据集使用协议（中文）.pdf) of the contract and fill it in Chinese (including the signature).  
+* Because the Dataset is restricted to **non-commercial** use, we only accepted e-mail addresses that end with `.edu`.
+* To submit a request with a signature, one way is to print the request form, sign, and scan it.
 
 
 ## Important Things to Note before Using the Data
@@ -36,5 +36,5 @@ The statistics of the current version is included in the dataset.
 ### "Recommended" flag vs. "Adopted" flag
 
 For each answer in the dataset, there are two flags: `Recommended` and `Adopted`. Their differences are:
-* `Recommended`: whether the answer is recommended by the webset (chosen by the webset system);
-* `Adopted`: whether the patient adopt the answer (choosen by the user).
+* `Recommended`: whether the answer is recommended by the 39ask website (chosen by the website system);
+* `Adopted`: whether the patient adopts the answer (chosen by the user).
