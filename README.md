@@ -29,7 +29,7 @@ Please read the following instructions before submitting your request form:
 | \# of answers | 401,488 |
 | avg \# of characters per answer | 85.21 |
 | \# of unique keyphrases | 11,724 |
-| avg # of keyphrases | 4.51 |
+| avg # of keyphrases per QA page | 4.51 |
 
 ### "Recommended" flag vs. "Adopted" flag
 
