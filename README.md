@@ -2,6 +2,12 @@
 
 This github repository includes the information about the ChiMed Corpus.
 
+## Updates
+
+Apr. 19, 2022
+
+**Upcoming Annotated Corpus based on ChiMed** We have annotated 1,000 QA pages with Chinese word segmentation and medical terms. The corpus will be released soon. Please send an email to `yhtian@uw.edu` if you are interested in the new annotated corpus. We will contact you back when the data is available. :)
+
 ## The Copyright
 
 The copyright of the corpus belongs to [39ask](http://www.39.net/). We release the ChiMed corpus based on our contract with 39ask.
