@@ -6,22 +6,17 @@ This github repository includes the information about the ChiMed Corpus.
 
 Apr. 29, 2022
 
-**Upcoming Annotated Corpus based on ChiMed** We have annotated 1,000 QA pages with Chinese word segmentation and medical terms. The corpus will be released soon. Please send an email to `yhtian@uw.edu` if you are interested in the new annotated corpus. We will contact you back when the data is available. :)
+**ChiMed** is availabel by valid request! The ChiMST corpus contains 1,000 QA pages with annotations of Chinese word segmentation and medical terms.
 
 ## The Copyright
 
 The copyright of the corpus belongs to [39ask](http://www.39.net/). We release the ChiMed corpus based on our contract with 39ask.
 
-## Request the ChiMed Dataset
+## Request the ChiMed and ChiMST Dataset
 
-To request the ChiMed Corpus, please download the contract in this repository ([English](./User_Contract_(English).pdf), [Chinese](./ChiMed_数据集使用协议（中文）.pdf)), fill the request form, sign it, and send the request file to `yhtian@uw.edu`. We will send the link to download the corpus to the e-mail address provided in the request form within three business days if the request form meets our requirements.
+Please vist [here](https://github.com/synlp/ChiMST) for the information to request the datasets.
 
-Please read the following instructions before submitting your request form:
-* If your affiliation is in China, please use the [Chinese version](./ChiMed_数据集使用协议（中文）.pdf) of the contract and fill it in Chinese (including the signature).  
-* Because the corpus is restricted to **non-commercial** use, we only accepted e-mail addresses that end with `.edu`.
-
-
-## Important Things to Note before Using the Data
+## Important Things to Note before Using the ChiMed
 
 ### The Statistics
 
