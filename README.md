@@ -2,7 +2,11 @@
 
 This github repository includes the information about the ChiMed Corpus.
 
-## Updates
+## 🔥 Updates 🔥
+
+Nov. 19, 2023
+
+We recently released a large language model for the Chinese medical domain named ChiMed-GPT, which is trained on ChiMed data. For more information, please visit our [GitHub Repo](https://github.com/synlp/ChiMed-GPT).
 
 Apr. 29, 2022
 
